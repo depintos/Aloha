@@ -4,17 +4,15 @@
 
 body {
 	margin: 0;
-	padding: 0
-	border:0;
 	color: #2d2d2d;
 	font-size: 16px;
 	line-height: 1.75;
 	font-family: Raleway;
-	max-width: 1140px;
 }
 
 .container {
-	padding: 0 2%;
+	padding: 0 5%;
+	width: 100%;
 	text-align: center;
 }
 
@@ -58,8 +56,9 @@ body {
 }
 
 .girl {
-	max-height: 560px;
-	position: absolute;
+    max-height: 560px;
+    position: absolute;
+    margin-left: -8%;
 }
 
 .bannertext {
@@ -67,6 +66,7 @@ body {
 	position: relative;
 	padding-top: 250px;
 	line-height: 0;
+	font-size: 20px;
 }
 
 .springsummer {
@@ -75,8 +75,8 @@ body {
 
 .flowers {
 	position: absolute;
-	max-height: 560px;
-	width: 100%;
+    max-height: 560px;
+    width: 100%;
 }
 
 .heading {
@@ -95,6 +95,7 @@ body {
 .hand-craftedstyles {
 	margin-bottom: 50px;
 }
+
 #shop {
 	display: flex;
 	flex-direction: column;
@@ -104,7 +105,6 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 1140px;
 	height: 205px;
 	position: relative;
 }
@@ -182,12 +182,18 @@ body {
 }
 
 .product {
-	display: inline-block;
-	width: 24%;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 300px;
+	max-width: 25vw;
+	height: 550px;
 }
 
 .productimage {
 	width: 100%;
+	height: 300px;
 }
 
 .type {
@@ -216,34 +222,36 @@ body {
 }
 
 .waves {	
-	position: absolute;
-	height: 292px;
-	width: 100%;
+    position: absolute;
+    width: 100%;
+    clip: rect(600px,1600px,1000px,0px);
+    margin-top: -600px;
 }
 
 .sign-uptext {
 	position: relative;
 	color: white;
+	top: 25px;
 }
 
-.subscribe {
-	height: 25px;
-	width: 250px;
-	position: absolute;
-	background-color: white;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	border-radius: 25px;
-	border-color: white;
-	padding-inline-start: 2.5px;
-	padding-inline-end: 1.5px;
-	padding-bottom: 1px;
-	padding-top: 1px;
-	right: 40%;
+#submitform {
+    height: 25px;
+    width: 250px;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    border-color: white;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    right: 42%;
+    padding-left: 10px;
+    padding-right: 2px;
+    margin-top: 25px;
 }
 
-button {
+.button {
 	border-radius: 25px;
 	color: white;
 	background-color: #e2574c;
@@ -251,12 +259,19 @@ button {
 	border: transparent;
 }
 
-input {
+.input-email {
 	color: #969696;
-	border: transparent;
-	border-radius: 25px;
-	left: 1px;
-	text-indent: 10px;
+    border: transparent;
+    border-radius: 25px;
+    text-align: left;
+}
+
+.input-subscribe {
+    border: transparent;
+    border-radius: 25px;
+    background-color: #e2574c;
+    text-align: center;
+    color: white;
 }
 
 .contactmedia {
@@ -292,13 +307,194 @@ input {
 footer {
 	background-color: #242424;
 	padding: 4rem 0;
+	margin-top: -25px;
 }
 
-.screen-reader-text {
-   clip: rect(1px, 1px, 1px, 1px);
-   position: absolute !important;
-   height: 1px;
-   width: 1px;
-   overflow: hidden;
-   color: white;
+@media only screen and (max-width: 1450px) {
+	
+	footer {
+		background-color: #242424;
+		margin-top: -64px;
+	    padding-top: 128px;
+	}
 }
+
+@media only screen and (max-width: 600px) {
+	
+	.container {
+	    width: 100%;
+	    text-align: center;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+	
+	.logo {
+		display: block;
+	    height: 75px;
+	    width: 125px;
+	}
+
+	.logocart {
+		display: flex;
+	    flex-direction: row;
+	    justify-content: space-evenly;
+	    align-items: center;
+	    padding-bottom: .5rem;
+	    padding-top: .5rem;
+	}
+
+	.navtext li:first-child {
+		margin-left: -5%;
+	}
+
+	.girl {
+		max-height: 387.5px;
+	    position: absolute;
+	    margin-left: -10%;
+	}
+
+	.banner {
+		height: 378.5px;
+	}
+
+	.bannertext {
+		color: white;
+	    position: relative;
+	    padding-top: 150px;
+	    line-height: 0;
+	    font-size: 20px;
+	}
+
+	.abouttext2 {
+		margin-top: -20px;
+	    padding-right: 10px;
+	    padding-left: 10px;
+	}
+
+	.boxes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 205px;
+	position: relative;
+	margin-bottom: -8.5%;
+	}
+
+	.box25 {
+	    width: 25%;
+	    height: 75%;
+		
+	}
+
+	.box50 {
+		width: 50%;
+		height: 75%;
+		
+	}
+
+	.boximage50 {
+		border-right: 2.5px solid white;
+	    border-bottom: 2.5px solid white;
+	    border-top: 2.5px solid white;
+	    border-left: 2.5px solid white;
+		width: 100%;
+		height: 100%;
+	}
+
+	.boximage25 {
+		border-right: 2.5px solid white;
+	    border-bottom: 2.5px solid white;
+	    border-top: 2.5px solid white;
+	    border-left: 2.5px solid white;
+		width: 100%;
+		height: 100%;
+	}
+
+	.text150 {      
+	    color: white;
+	    position: absolute;
+	    top: 20%;
+	    left: 18%;
+	}
+
+	.text225 {        
+		color: white;
+		position: absolute;
+		top: 20%;
+		right: 29.5%;
+	}
+
+	.text325 {          
+		color: white;
+		position: absolute;
+		top: 20%;
+		right: 4%;
+	}
+
+	.text425 {        
+		color: white;
+		position: absolute;
+		top: 20%;
+		left: 7.5%;
+	}
+
+	.text525 {        
+		color: white;
+		position: absolute;
+		top: 20%;
+		left: 32.5%;
+	}
+
+	.text650 {      
+	    color: white;
+	    position: absolute;
+	    top: 20%;
+	    right: 15%;
+	}
+
+	.waves {
+	    width: 100%;
+	    margin-top: -200px;
+	    clip: rect(200px,1600px,500px,0px);
+	    position: absolute;
+	    height: 450px;
+	}
+
+	.sign-uptext {
+		position: relative;
+		color: white;
+		top: 0px;
+	}
+
+	#submitform {
+		height: 25px;
+	    width: 250px;
+	    position: absolute;
+	    background-color: white;
+	    display: flex;
+	    justify-content: space-between;
+	    border-radius: 25px;
+	    border-color: white;
+	    padding-bottom: 1px;
+	    padding-top: 1px;
+	    right: 31%;
+	    padding-left: 10px;
+	    padding-right: 2px;
+	    margin-top: 25px;
+	}
+
+	footer {
+		padding-top: 30px;
+	    padding-bottom: 30px;
+	    margin-top: -45px;
+	}
+
+	.contactmedia {
+		width: 100%;
+	    text-align: center;
+	    padding-left: 35px;
+	    padding-right: 35px;
+	}
+}
+
+
